@@ -1,6 +1,9 @@
 import TestUseState from './components/TestUseState'
 import TestUseRef from './components/TestUseRef'
 import TestPropsParameters from './components/TestPropsParameters'
+import TestCreateContextUseContext from './components/TestCreateContextUseContext'
+import TestUseEffect from './components/TestUseEffect'
+import TestUseEffectClear from './components/TestUseEffectClear'
 
 function App() {
     return (
@@ -12,11 +15,15 @@ function App() {
             {/* <hr />
             <TestUseRef /> */}
 
-            <hr />
+            {/* <hr />
             <TestPropsParameters />
             <hr />
-            <TestCreateContextUseContext />
+            <TestCreateContextUseContext /> */}
 
+            <hr />
+            <TestUseEffect />
+            <hr />
+            <TestUseEffectClear />
         </div>
     );
 }
