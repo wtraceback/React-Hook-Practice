@@ -4,6 +4,7 @@ import TestPropsParameters from './components/TestPropsParameters'
 import TestCreateContextUseContext from './components/TestCreateContextUseContext'
 import TestUseEffect from './components/TestUseEffect'
 import TestUseEffectClear from './components/TestUseEffectClear'
+import TestCustomHook from './components/TestCustomHook'
 
 function App() {
     return (
@@ -20,10 +21,14 @@ function App() {
             <hr />
             <TestCreateContextUseContext /> */}
 
-            <hr />
+            {/* <hr />
             <TestUseEffect />
             <hr />
-            <TestUseEffectClear />
+            <TestUseEffectClear /> */}
+
+            <hr />
+            <TestCustomHook />
+
         </div>
     );
 }
