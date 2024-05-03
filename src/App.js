@@ -1,5 +1,7 @@
 import TestUseState from './components/TestUseState'
 import TestUseRef from './components/TestUseRef'
+import TestPropsParameters from './components/TestPropsParameters'
+
 function App() {
     return (
         <div className="App">
@@ -7,8 +9,14 @@ function App() {
             {/* <hr />
             <TestUseState /> */}
 
+            {/* <hr />
+            <TestUseRef /> */}
+
             <hr />
-            <TestUseRef />
+            <TestPropsParameters />
+            <hr />
+            <TestCreateContextUseContext />
+
         </div>
     );
 }
