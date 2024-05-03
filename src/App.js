@@ -5,6 +5,7 @@ import TestCreateContextUseContext from './components/TestCreateContextUseContex
 import TestUseEffect from './components/TestUseEffect'
 import TestUseEffectClear from './components/TestUseEffectClear'
 import TestCustomHook from './components/TestCustomHook'
+import ReactHooksUsageRules from './components/ReactHooksUsageRules'
 
 function App() {
     return (
@@ -26,9 +27,11 @@ function App() {
             <hr />
             <TestUseEffectClear /> */}
 
-            <hr />
-            <TestCustomHook />
+            {/* <hr />
+            <TestCustomHook /> */}
 
+            <hr />
+            <ReactHooksUsageRules />
         </div>
     );
 }
