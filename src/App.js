@@ -1,11 +1,12 @@
-import TestUseState from './components/TestUseState'
-import TestUseRef from './components/TestUseRef'
-import TestPropsParameters from './components/TestPropsParameters'
-import TestCreateContextUseContext from './components/TestCreateContextUseContext'
-import TestUseEffect from './components/TestUseEffect'
-import TestUseEffectClear from './components/TestUseEffectClear'
-import TestCustomHook from './components/TestCustomHook'
-import ReactHooksUsageRules from './components/ReactHooksUsageRules'
+// import TestUseState from './components/TestUseState'
+// import TestUseRef from './components/TestUseRef'
+// import TestPropsParameters from './components/TestPropsParameters'
+// import TestCreateContextUseContext from './components/TestCreateContextUseContext'
+// import TestUseEffect from './components/TestUseEffect'
+// import TestUseEffectClear from './components/TestUseEffectClear'
+// import TestCustomHook from './components/TestCustomHook'
+// import ReactHooksUsageRules from './components/ReactHooksUsageRules'
+import TestReduxToolkitAndReactRedux from './components/TestReduxToolkitAndReactRedux'
 
 function App() {
     return (
@@ -30,8 +31,11 @@ function App() {
             {/* <hr />
             <TestCustomHook /> */}
 
+            {/* <hr />
+            <ReactHooksUsageRules /> */}
+
             <hr />
-            <ReactHooksUsageRules />
+            <TestReduxToolkitAndReactRedux />
         </div>
     );
 }
