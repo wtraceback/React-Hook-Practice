@@ -11,30 +11,22 @@ import TestReduxToolkitAndReactRedux from './components/TestReduxToolkitAndReact
 function App() {
     return (
         <div className="App">
-            hello world
-            {/* <hr />
-            <TestUseState /> */}
+            {/* <TestUseState /> */}
 
-            {/* <hr />
-            <TestUseRef /> */}
+            {/* <TestUseRef /> */}
 
-            {/* <hr />
-            <TestPropsParameters />
+            {/* <TestPropsParameters />
             <hr />
             <TestCreateContextUseContext /> */}
 
-            {/* <hr />
-            <TestUseEffect />
+            {/* <TestUseEffect />
             <hr />
             <TestUseEffectClear /> */}
 
-            {/* <hr />
-            <TestCustomHook /> */}
+            {/* <TestCustomHook /> */}
 
-            {/* <hr />
-            <ReactHooksUsageRules /> */}
+            {/* <ReactHooksUsageRules /> */}
 
-            <hr />
             <TestReduxToolkitAndReactRedux />
         </div>
     );
