@@ -5,6 +5,7 @@ import Home from '../page/home'
 import Layout from '../page/Layout'
 import About from '../page/About'
 import Board from '../page/Board'
+import NotFound from '../page/NotFound'
 
 const router = createBrowserRouter([
     {
@@ -12,7 +13,9 @@ const router = createBrowserRouter([
         element: <Layout />,
         children: [
             {
-                path: 'about',
+                // path: 'about',
+                // 设置为默认二级路由，一级路由访问的时候，它也能得到渲染
+                index: true,
                 element: <About />,
             },
             {
@@ -29,7 +32,11 @@ const router = createBrowserRouter([
         // path: '/home',
         path: '/home/:id/:name',
         element: <Home />,
-    }
+    },
+    {
+        path: '*',
+        element: <NotFound />,
+    },
 ])
 
 export default router
