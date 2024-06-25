@@ -1,4 +1,18 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter, createHashRouter } from 'react-router-dom'
+
+/*
+路由模式
+    history 模式
+        createBrowserRouter
+        url/login
+        底层原理 history对象+pushState事件
+        需要后端支持
+    hash 模式
+        createHashRouter
+        url/#/login
+        底层原理 监听hashChange事件
+        不需要后端支持
+*/
 
 import Login from '../page/login'
 import Home from '../page/home'

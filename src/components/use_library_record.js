@@ -39,3 +39,28 @@ useRef
 createContext, useContext   // 使用 context 机制跨层传递数据
 useEffect
 自定义 hook 实现
+
+
+// ===============================
+环境搭建
+    使用 CRA 创建项目，并安装必要依赖
+    1. Redux 状态管理： @reduxjs/toolkit react-redux
+    2. 路由： react-router-dom
+    3. 时间处理： dayjs
+    4. class类名处理： classnames
+    5. 移动端组件库： antd-mobile
+    6. 请求插件： axios
+    7. 路径解析配置： craco     @craco/craco
+    8. 目录解构
+        apis        接口
+        assets      静态资源
+        components  通用组件
+        pages       页面级组件
+        router      路由Router
+        store       Redux状态
+        utils       工具函数
+    9. 使用 scss
+        scss 是一种后缀名为 .scss 的预编译CSS语言，支持一些原生CSS不支持的高级用法，
+        比如：变量使用，嵌套语法等。
+            yarn add sass
+            style.scss --> sass（转换） --> style.css
