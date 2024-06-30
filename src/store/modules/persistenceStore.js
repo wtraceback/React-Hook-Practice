@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { setToken as _setToken, getToken, http } from '../../utils'
+import { setToken as _setToken, getToken, http } from '@/utils'
 
 
 const persistenceStore = createSlice({
