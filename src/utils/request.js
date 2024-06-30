@@ -1,5 +1,7 @@
 // axios 的封装处理
 import axios from 'axios'
+// import { removeToken } from './token'
+// import router from '@/router'
 
 const http = axios.create({
     baseURL: 'http://www.example.com/v1_0',
@@ -23,6 +25,14 @@ http.interceptors.response.use((response) => {
 }, (error) => {
     // 超出 2xx 范围的状态码都会触发该函数
     // 对响应错误做点什么
+    // 监控 401 token 失效处理
+    console.dir(error)
+    if (error.response.status === 401) {
+        // removeToken()
+        // router.navigate('/login')
+        // window.location.reload()
+    }
+
     return Promise.reject(error)
 })
 
