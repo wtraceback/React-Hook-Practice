@@ -20,6 +20,7 @@ import Layout from '../page/Layout'
 import About from '../page/About'
 import Board from '../page/Board'
 import NotFound from '../page/NotFound'
+import App from '@/App'
 
 const router = createBrowserRouter([
     {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
         // path: '/home',
         path: '/home/:id/:name',
         element: <Home />,
+    },
+    {
+        path: '/app',
+        element: <App />,
     },
     {
         path: '*',
