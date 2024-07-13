@@ -8,6 +8,7 @@ import TestUseRef2 from './components/TestUseRef2'
 // import TestCustomHook from './components/TestCustomHook'
 // import ReactHooksUsageRules from './components/ReactHooksUsageRules'
 // import TestReduxToolkitAndReactRedux from './components/TestReduxToolkitAndReactRedux'
+import TestUseMemo from './components/TestUseMemo'
 
 function App() {
     return (
@@ -15,7 +16,7 @@ function App() {
             {/* <TestUseState /> */}
 
             {/* <TestUseRef /> */}
-            <TestUseRef2 />
+            {/* <TestUseRef2 /> */}
 
             {/* <TestPropsParameters />
             <hr />
@@ -30,6 +31,8 @@ function App() {
             {/* <ReactHooksUsageRules /> */}
 
             {/* <TestReduxToolkitAndReactRedux /> */}
+
+            <TestUseMemo />
         </div>
     );
 }
