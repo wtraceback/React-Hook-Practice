@@ -8,7 +8,8 @@ import TestUseRef2 from './components/TestUseRef2'
 // import TestCustomHook from './components/TestCustomHook'
 // import ReactHooksUsageRules from './components/ReactHooksUsageRules'
 // import TestReduxToolkitAndReactRedux from './components/TestReduxToolkitAndReactRedux'
-import TestUseMemo from './components/TestUseMemo'
+// import TestUseMemo from './components/TestUseMemo'
+import TestUseCallback from './components/TestUseCallback'
 
 function App() {
     return (
@@ -22,6 +23,15 @@ function App() {
             <hr />
             <TestCreateContextUseContext /> */}
 
+            {/*
+                组件存在的整个过程称为一个生命周期
+                挂载(mount) -> 更新(update) -> 卸载(unmount)
+                组件的挂载和销毁只有一次
+
+                useEffect 存在的整个过程称为一个生命周期
+                创建执行 -> 销毁
+                组件里的 useEffect 的挂载和销毁可能会有很多次
+            */}
             {/* <TestUseEffect />
             <hr />
             <TestUseEffectClear /> */}
@@ -32,7 +42,9 @@ function App() {
 
             {/* <TestReduxToolkitAndReactRedux /> */}
 
-            <TestUseMemo />
+            {/* <TestUseMemo /> */}
+
+            <TestUseCallback />
         </div>
     );
 }
