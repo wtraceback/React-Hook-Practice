@@ -3,6 +3,7 @@ import { useState, useRef, forwardRef, useEffect, useImperativeHandle } from "re
 const Children = forwardRef((props, ref) => {
     const inputRef = useRef(null)
 
+    // 父组件调用子组件的 DOM 时，能够对 DOM 节点上的返回内容中转做一层限制
     useImperativeHandle(ref, () => {
         return {
             blur() {
