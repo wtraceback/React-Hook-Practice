@@ -1,6 +1,6 @@
 // import TestUseState from './components/TestUseState'
 // import TestUseRef from './components/TestUseRef'
-import TestUseRef2 from './components/TestUseRef2'
+// import TestUseRef2 from './components/TestUseRef2'
 // import TestPropsParameters from './components/TestPropsParameters'
 // import TestCreateContextUseContext from './components/TestCreateContextUseContext'
 // import TestUseEffect from './components/TestUseEffect'
@@ -9,7 +9,9 @@ import TestUseRef2 from './components/TestUseRef2'
 // import ReactHooksUsageRules from './components/ReactHooksUsageRules'
 // import TestReduxToolkitAndReactRedux from './components/TestReduxToolkitAndReactRedux'
 // import TestUseMemo from './components/TestUseMemo'
-import TestUseCallback from './components/TestUseCallback'
+// import TestUseCallback from './components/TestUseCallback'
+import TestUseRef3 from './components/TestUseRef3'
+
 
 function App() {
     return (
@@ -18,6 +20,7 @@ function App() {
 
             {/* <TestUseRef /> */}
             {/* <TestUseRef2 /> */}
+            <TestUseRef3 />
 
             {/* <TestPropsParameters />
             <hr />
@@ -44,7 +47,7 @@ function App() {
 
             {/* <TestUseMemo /> */}
 
-            <TestUseCallback />
+            {/* <TestUseCallback /> */}
         </div>
     );
 }
