@@ -1,6 +1,8 @@
 // import TestUseState from './components/TestUseState'
 // import TestUseRef from './components/TestUseRef'
 // import TestUseRef2 from './components/TestUseRef2'
+// import TestUseRef3 from './components/TestUseRef3'
+import TestUseRef4 from './components/TestUseRef4'
 // import TestPropsParameters from './components/TestPropsParameters'
 // import TestCreateContextUseContext from './components/TestCreateContextUseContext'
 // import TestUseEffect from './components/TestUseEffect'
@@ -10,7 +12,6 @@
 // import TestReduxToolkitAndReactRedux from './components/TestReduxToolkitAndReactRedux'
 // import TestUseMemo from './components/TestUseMemo'
 // import TestUseCallback from './components/TestUseCallback'
-import TestUseRef3 from './components/TestUseRef3'
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
 
             {/* <TestUseRef /> */}
             {/* <TestUseRef2 /> */}
-            <TestUseRef3 />
+            {/* <TestUseRef3 /> */}
+            <TestUseRef4 />
 
             {/* <TestPropsParameters />
             <hr />
