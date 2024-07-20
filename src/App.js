@@ -1,4 +1,4 @@
-import { Profiler } from 'react';
+import React, { Profiler, Suspense } from 'react';
 
 // import TestUseState from './components/TestUseState'
 // import TestUseRef from './components/TestUseRef'
@@ -15,6 +15,9 @@ import { Profiler } from 'react';
 // import TestUseMemo from './components/TestUseMemo'
 // import TestUseCallback from './components/TestUseCallback'
 import TestProfiler from './components/TestProfiler'
+import TestSuspense2 from './components/TestSuspense2'
+
+const TestSuspense = React.lazy(() => import('./components/TestSuspense'))
 
 function renderCallback(id, phase, actualDuration, baseDuration, startTime, commitTime) {
     // 对渲染时间进行汇总或记录
@@ -71,6 +74,16 @@ function App() {
             <Profiler id="app" onRender={renderCallback}>
                 <TestProfiler />
             </Profiler>
+
+            {/* 等待 TestSuspense 组件加载完成才渲染，在这之前，显示 Loading */}
+            <Suspense fallback={<div>Loading...</div>}>
+                <TestSuspense />
+            </Suspense>
+
+            {/* 等待 ajax 获取到数据之后才展示 TestSuspense2，在这之前展示 Loading2... */}
+            <Suspense fallback={<div>Loading2...</div>}>
+                <TestSuspense2 />
+            </Suspense>
         </div>
     );
 }
