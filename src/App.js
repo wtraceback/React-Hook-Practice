@@ -16,6 +16,7 @@ import React, { Profiler, Suspense } from 'react';
 // import TestUseCallback from './components/TestUseCallback'
 import TestProfiler from './components/TestProfiler'
 import TestSuspense2 from './components/TestSuspense2'
+import TestUseDeferredValue from './components/TestUseDeferredValue'
 
 const TestSuspense = React.lazy(() => import('./components/TestSuspense'))
 
@@ -84,6 +85,8 @@ function App() {
             <Suspense fallback={<div>Loading2...</div>}>
                 <TestSuspense2 />
             </Suspense>
+
+            <TestUseDeferredValue />
         </div>
     );
 }
