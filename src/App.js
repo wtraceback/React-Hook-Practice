@@ -17,6 +17,7 @@ import React, { Profiler, Suspense } from 'react';
 import TestProfiler from './components/TestProfiler'
 import TestSuspense2 from './components/TestSuspense2'
 import TestUseDeferredValue from './components/TestUseDeferredValue'
+import TestMemo from './components/TestMemo'
 
 const TestSuspense = React.lazy(() => import('./components/TestSuspense'))
 
@@ -87,6 +88,8 @@ function App() {
             </Suspense>
 
             <TestUseDeferredValue />
+
+            <TestMemo />
         </div>
     );
 }
