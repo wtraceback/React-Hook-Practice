@@ -19,6 +19,7 @@ import TestSuspense2 from './components/TestSuspense2'
 import TestUseDeferredValue from './components/TestUseDeferredValue'
 import TestMemo from './components/TestMemo'
 import TestUseTransition from './components/TestUseTransition'
+import TestUseTransition2 from './components/TestUseTransition2'
 
 const TestSuspense = React.lazy(() => import('./components/TestSuspense'))
 
@@ -96,6 +97,9 @@ function App() {
 
             <hr />
             <TestUseTransition />
+
+            <hr />
+            <TestUseTransition2 />
         </div>
     );
 }
