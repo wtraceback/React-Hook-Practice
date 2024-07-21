@@ -26,6 +26,7 @@ function TestUseDeferredValue() {
             <input
                 value={inputValue || ''}
                 onChange={(e) => {setInputValue(e.target.value)}}
+                placeholder={"TestUseDeferredValue"}
             />
             <Todos text={deferredInputValue} />
         </>
