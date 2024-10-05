@@ -39,6 +39,14 @@ useRef
 createContext, useContext   // 使用 context 机制跨层传递数据
 useEffect
 自定义 hook 实现
+useMemo
+useCallback
+Profiler
+Suspense
+useDeferredValue
+memo
+useTransition
+    startTransition
 
 
 // ===============================

@@ -10,7 +10,7 @@ const Children = forwardRef((props, ref) => {
                 inputRef.current.blur()
             }
         }
-    })
+    }, [])
 
     const [value, setValue] = useState('');
 
@@ -23,7 +23,7 @@ const Children = forwardRef((props, ref) => {
     )
 })
 
-function TestUseRef3() {
+function TestUseRef4() {
     // 将父组件中定义的 ref 传递到子组件中使用
     // 为了在父组件中操作子组件的元素
     const ref = useRef(null)
@@ -43,4 +43,4 @@ function TestUseRef3() {
     )
 }
 
-export default TestUseRef3
+export default TestUseRef4
